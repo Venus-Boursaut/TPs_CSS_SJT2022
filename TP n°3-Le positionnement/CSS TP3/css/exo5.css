@@ -1,0 +1,101 @@
+/*-------Table de styles--------*/
+/*            Contenus          */
+/*                              */
+/*            Header            */
+/*            NavBar            */
+/*            Main              */
+/*            Articles          */
+/*            Footer            */
+/*                              */
+/*------------------------------*/
+
+
+
+
+/*------------Header------------*/
+header{
+  background-color: black;
+}
+/*------------NavBar------------*/
+
+.lien, .liens{
+  top: 0%;
+  float: right;
+  background-color: orange;
+  max-width: 840px;
+  height: 50px;
+  
+}
+.liens{
+  background-color: black;
+}
+header nav{
+    height: 100px;
+}
+
+header li{
+ 
+    display: inline;
+}
+header li a{
+
+  /* justify-content: right; */
+/* text-align:center; */
+display: inline-block;
+color: rgb(242, 235, 222);
+margin: 0 30px;
+padding-top: 12px;
+
+}
+
+
+
+
+/*------------/NavBar-----------browser full stak*/
+
+/*------------/Header-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

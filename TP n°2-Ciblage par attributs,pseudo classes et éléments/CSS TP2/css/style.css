@@ -1,0 +1,268 @@
+/*--- Table de styles---*/
+/*    Contenus          */
+/*                      */
+/*    Header            */
+/*    NavBar            */
+/*    Main              */
+/*    Articles          */
+/*    Footer            */
+/**/
+/*----------------------*/
+
+
+/*        --------body--------      */
+body {
+    margin-bottom: 0%;
+    font-family: 'roboto', sans-serif;
+    /*Pour pouvoir avoir accés a la typogrphie roboto, j'ai était chercher sur internet avec se lien là "https://www.codegrepper.com/code-examples/css/css+roboto+font" */
+    background-color: #F6F6F6;
+}
+
+/*   Header   */
+
+
+header {
+    background-color: #061622;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 55px;
+    max-width: 1150px;
+    width: auto;
+    text-align: justify;
+    margin: auto;
+}
+
+/*    --------/header--------   */
+
+/*       --------NavBarv--------    */
+
+nav img{
+    padding-top: 2%;
+    margin: -10px 15px;
+    height: 70%;
+    /* height: 100%; */
+    filter: brightness(0) invert(1);
+    /* width: 50%; inutile*/
+}
+
+nav ul {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+    height: 120px;
+}
+
+
+
+nav li {
+    margin-top: 10px;
+    width: 25%;
+    /* color: #000000; inutile*/
+    max-width: 1150px;
+    display: flex;
+    /* vertical-align: text-top; */
+
+}
+
+
+nav a{
+    width: 100%;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    padding-top: 25px;
+    text-align: center;
+    text-decoration: none;
+    /* margin: auto; inutile*/
+    padding-right: 4px;
+}
+
+nav .facebook {
+    background-color: #0E1F56;
+    border-top-left-radius: 8px; /* arrondit en haut à gauche */
+    border-bottom-left-radius: 8px; /* arrondit en bas à gauche */
+    /* arrondit en haut à droite 
+    transition: 3s, color 1s;*/
+}
+
+.facebook:hover {
+    background-color: #B318FF;
+    text-decoration: underline;
+    /* lien/texte souligner
+    transition: 3s, color 1s;
+    transform: rotate(500deg); */
+}
+
+nav .youtube {
+    background-color: #E52D27;
+    /*transition: 3s, color 1s;*/
+}
+
+.youtube:hover {
+    text-decoration: underline;
+    /* lien/texte souligner */
+    background-color: #B318FF;
+    /*transition: 3s, color 1s;
+    ransform: rotate(-500deg); met une rotation a gauche*/
+}
+ /* nav .youtube:after{  
+   /* height: 25px;
+   width: 25px; cette fonction est inutile*/
+   /* vertical-align: text-top;  *//*
+}*/
+
+nav .twitter {
+    background-color: #55ACEE;
+    /*transition: 3s, color 1s; fait en sorte d'apparetre*/
+}
+
+.twitter:hover {
+    text-decoration: underline;/* lien/texte souligner */
+    background-color: #B318FF;
+    /* transition: 3s, color 1s;
+    transform: rotate(500deg);*/
+}
+
+nav .instagram {
+    background-color: #C13584;
+    border-top-right-radius: 10px;
+    /* arrondit en haut à gauche */
+    border-bottom-right-radius: 10px;
+    /* arrondit en haut à droite 
+    transition: 3s, color 1s;*/
+}
+
+.instagram:hover {
+    text-decoration: underline;/* lien/texte souligner */
+    background-color: #B318FF;
+    /*transition: 3s, color 1s;
+   transform: rotate(-500deg);*/
+}
+
+/*      --------/NavBar--------     */
+
+main {
+    max-width: 1150px;
+    text-align: justify;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    position: relative;
+    /*1. Le positionnement des titres de second niveau (H2) passe en relatif*/
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+h2:before {
+    content: "";
+    width: 5px;
+    /*background-color: #0E1F56;*/
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: -30px;
+}
+
+h2:after {
+    content: "";
+    width: 5px;
+    /* background-color: #0E1F56;*/
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: -30px;
+}
+
+.intro {
+    margin-top: 20px;
+}
+
+main img {
+    width: 100%;
+}
+
+img {
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+main article {
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 25px;
+    margin: 25px 0px 25px 0px;
+    /* 25ps = top, 0 px=left, 25px=bottom, 0px=right */
+}
+
+article p {
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+.reseau {
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    /* lien/texte souligner */
+    color: #3C93F7;
+}
+
+.https1 {
+    /* j'ai mis une class="https" afin de ciblé les liens qui redirigent vers un lien externe */
+    color: #5b2c2c;
+}
+
+.https2{ color: #E52D27;}
+
+.https3{color: #55ACEE;}
+
+.https4{ color: #C13584;}
+
+main a {
+    font-weight: bold;
+    text-decoration: none;
+    /* pas de texte/lien souligner */
+}
+
+.article1,
+.article2,
+.article3,
+.article4 {
+    border-left: 3px solid gray;
+    color:black 
+}
+
+article .article1 {
+    color: #0E1F56;
+}
+
+/*     --------/body--------     */
+
+/*    --------footer--------     */
+footer {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+/*      --------/footer--------    */

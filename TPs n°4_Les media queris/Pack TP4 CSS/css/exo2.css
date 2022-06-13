@@ -1,0 +1,148 @@
+/* TABLE DES STYLES */
+/*                  */
+/* GLOBALS          */
+/* HEADER & NAV     */
+/* MAIN             */
+/*                  */
+/*                  */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1,h2{
+    margin: 40px 0;
+}
+
+/* HEADER & MENU DE NAVIGATION */
+
+header{
+    background-color: black;
+    color: white;
+    padding: 0 1.25rem;
+}
+
+header nav{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+
+header nav .logo{
+    text-transform: uppercase;
+}
+
+header nav p{
+    border: 2px solid white;
+    width: fit-content;
+    padding: 15px 30px;
+    margin: 0 auto 1.25rem auto;
+}
+
+header nav li{
+    text-align: center;
+    list-style-type: none;
+}
+
+header nav a{
+    display: block;
+    padding: 15px 30px;
+    color: white;
+}
+
+/* MAIN */
+
+main{
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 1.25rem;
+}
+
+main .justeLeTexte{
+    text-align: justify;
+}
+
+main img{
+    width: 100%;
+    font-size: 0;
+}
+
+main .imageFlottanteDroite, main .imageFlottanteGauche {
+    /* float: right; */
+    /* margin-left: 30px; */
+    margin-bottom: 1.875rem;
+}
+
+@media screen and (min-width:1024px){
+
+    /* header{
+        display: flex; */
+        /* padding: 20px; marge intérieur de 20px à la section header 
+    }*/
+    
+    header nav{
+        display: flex; /* secion nav affichée de façon flexible */
+        vertical-align: middle; /* éléments (items) alignés au centre */
+        /* padding: 20px; marge intérieur global de 20 px */
+    }
+    
+    header nav .logo{
+         /* text-transform: uppercase;texte en majuscule */
+        flex: 1; /* classe logo dispose de la propriété flex:1 */
+        /* padding: 15px; */
+       /* padding-top: 5px; */
+    }
+    
+    header nav p{
+         /* margin:auto;marge extérieur auto */
+       /* margin: -20px;  marge extérieur inférieur à 20px */
+        margin-left: 0; /* marge extérieure gauche nulle */
+        margin-bottom: 0; /* marge extérieur inférieure nulle */
+    }
+
+    header nav ul {
+        display: flex; /* menu de navigation ul affiché de façon flexible */
+    }
+    
+    header nav li{
+        text-align: center; /* contenus textuels centrés */
+         /* margin: 30px;marge extérieure latérale de 30px */
+    }
+    
+    header nav a{
+        margin: 0 1.875rem;
+        /*padding-right: 0;  marge intérieure droite null */
+    }
+    
+    header nav li:last-of-type{
+        padding-right: 0;
+        /* margin-right: 0; */
+    }
+
+    /* MAIN */
+
+    main img{
+        width: 500px; /* image imbriquées étendues à 500px de large */
+        /* font-size: 0; */
+    }
+
+    main .imageFlottanteDroite {
+        float: right; /* classe placée de manière flottante à droite */
+         margin: 0 0 15px 1.875rem;
+        /*margin-left: 30px; marge extérieur gauche de 30px */
+         /*margin-bottom: 15px; marge inférieur de 15 px */
+    }
+    
+    main .imageFlottanteGauche {
+       /* left: 0; */
+        float: left; /* classe placée de manière flottante à gauche */
+        margin: 0 1.875rem 15px 0;
+        /*margin-right: 30px;  marge extérieur droite de 30 px */
+          /*margin-bottom: 15px;marge inférieur de 15px */
+    }
+}
+
+
+

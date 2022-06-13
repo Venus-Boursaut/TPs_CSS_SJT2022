@@ -1,0 +1,99 @@
+/*-------Table de styles--------*/
+/*            Contenus          */
+/*                              */
+/*            Header            */
+/*            NavBar            */
+/*            Main              */
+/*            Articles          */
+/*            Footer            */
+/*                              */
+/*------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*------------Header------------*/
+header {
+    background-color: black;
+    border-radius: 8px; /*pas ccompatible avec internet explorer8*/
+    padding: 20px;
+    margin: 20px;
+    height: 55px;
+    /* position: fixed; permet de place un block qui va permettre dxe suive le deplacement de l'utilisateure */
+}
+
+nav {
+    /* position: sticky; (position fix au sein d'un block mais qui ne peut pas en sortie)  permet de suivre sous forme de bloc tout en aillant une partie de notre nav qui defile jusqu'a a un certain moment essencielement utiliser en nav barre et trés rarement*/
+    height: 80%;
+}
+
+nav ul {
+    /* display: flex; */
+    margin-top: 1em;
+    text-align: right;
+}
+
+nav li {
+    display: inline;
+    color: #000000;
+}
+
+nav a {
+    width: 100%;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    margin: 0 30px;
+    text-decoration: none;
+    /* pas de texte/lien souligner */
+}
+
+header a {
+    /* padding-right: 115px; */
+    text-decoration: none;
+    max-height: 550px;
+    max-width: 550px;
+    padding-top: 20px;
+}
+
+header img {
+    float: left;
+    max-height: 55px;
+    max-width: 55px;
+}
+
+/*-----------/Header------------*/
+
+/*-------------Main------------*/
+
+h1,
+h2 {
+    margin: 40px 0;
+}
+
+main {
+    max-width: 1150px;
+    margin: auto;
+}
+
+main .text {
+    text-align: justify;
+}
+
+main img {
+    width: 300px;
+}
+
+.imageFlottanteDroite {
+    float: right;
+}
+
+.imageFlottanteGauche {
+    float: left;
+}
+
+/*------------/Main------------*/

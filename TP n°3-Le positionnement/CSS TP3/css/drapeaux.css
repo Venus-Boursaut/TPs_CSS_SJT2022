@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+}
+
+/*           DRAPEAU FRANCE           */
+#france {
+  width: 300px;
+  height: 200px;
+  border: 2px solid rgb(0, 0, 0);
+  position: relative;
+}
+
+#france::before {
+  content: "";
+  width: 33%;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  height: 100%;
+  background-color: #002395;
+}
+
+#france::after {
+  content: "";
+  width: 33%;
+  position: absolute;
+  right: 0%;
+  left: 66%;
+  top: 0%;
+  height: 100%;
+  background-color: #cf0921;
+}
+
+/*       ALLEMAGNE       */
+#allemagne {
+  width: 300px;
+  height: 250px;
+  border: 2px solid rgb(0, 0, 0);
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9400479616306955) 32%, rgba(189, 0, 0, 1) 32%, rgba(189, 0, 0, 1) 66%, rgba(255, 229, 0, 1) 67%, rgba(255, 229, 0, 1) 76%);/*ne support pas  linear-gradient avec internet explorer9/8*/
+  /* width: 750px;
+    height: 350px;
+    position: relative;
+    top: 0%;
+    border: medium solid black; */
+}
+
+#allemagne::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+}
+
+/*          JAPON            */
+#japon {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  background-color: white;
+  border: 2px black;
+}
+
+#japon::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: #cf0921;
+  border-radius: 50px;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  border-radius: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/*       SUISSE      */
+#suisse {
+  width: 300px;
+  height: 300px;
+  background-color: #cf0921;
+  /* border: 10px solid rgb(85, 234, 16); */
+  position: relative;
+}
+
+#suisse::before,
+#suisse::after {
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  content: "";
+}
+
+#suisse::before {
+  width: 16.66%;
+  height: 66%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#suisse::after {
+  width: 66%;
+  height: 16.66%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  /* rotate(90deg); */
+}
+
+
+/*        CAMEROUN        */
+#cameroun {
+  width: 300px;
+  height: 204px;
+  background: linear-gradient(90deg, rgba(239, 241, 9, 0.9400479616306955) 34%, rgba(32, 144, 11, 1) 34%, rgba(32, 144, 11, 1) 69%, rgba(242, 0, 0, 1) 69%);/*ne support pas  linear-gradient avec internet explorer9/8*/
+  position: relative;
+}
+
+#cameroun::before {
+  content: "\2605";
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: yellow;
+}
+
+/*        NORVEGE        */
+#norvege {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #cd3d2e;
+  border-radius: 5px;
+}
+
+#norvege #blue {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* Je positionne mon élément, à l'intérieur du même conteneur parent */
+}
+
+#norvege #blue:before,
+#norvege #blue:after {
+  position: absolute;
+  content: '';
+  /* contenue vide */
+  background-color: #34495e;
+}
+
+#norvege #blue:before {
+  bottom: 0;
+  left: 95px;
+  width: 20px;
+  height: 100%;
+}
+
+#norvege #blue:after {
+  top: 50%;
+  right: 0;
+  width: 100%;
+  height: 20px;
+  transform: translateY(-50%);
+  /* donner à l'élément une position sur l'axe prédéfinit */
+}
+
+#norvege #white {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#norvege #white:before,
+#norvege #white:after {
+  position: absolute;
+  content: '';
+  background-color: #fff;
+}
+
+#norvege #white:before {
+  bottom: 0;
+  left: 85px;
+  width: 40px;
+  height: 100%;
+}
+
+#norvege #white:after {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  transform: translateY(-50%);
+}

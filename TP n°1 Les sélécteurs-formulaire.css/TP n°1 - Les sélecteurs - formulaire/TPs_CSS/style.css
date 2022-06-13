@@ -1,0 +1,49 @@
+/*header{
+    text-align: center;
+    font-size: 25px;
+font-family: sans-serif;
+color: #359E7B;
+}
+body{ background-color: #F6F6F6;
+
+}
+section form {
+    max-width: 700px;
+    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*toute les propriété vont devoir avoiir une suit e logique */
+/* 
+.noms, .sujets, .envoi {
+   border: none;
+    font-size: 25px;
+    border-bottom: solid 2px #359E7B;
+    padding: 15px;
+    margin-bottom: 20px;
+    resize: none;
+    width: 100%;
+} 
+.champs{
+    border: solid #359E7B;
+    height: 250px;
+    padding-left: 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    resize: none;
+    width: 100%;
+    position: relative;
+}
+
+.envoi {
+    background-color: #359E7B;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 55px;
+    width: 730px;
+}
+    
+
+

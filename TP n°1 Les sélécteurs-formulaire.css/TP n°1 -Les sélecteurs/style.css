@@ -1,0 +1,194 @@
+
+header nav {
+    /* il faut regarder le point 15,13 et 19 il l'a rejouter*/
+    background-color: #359E7B;
+    display: flex;
+    justify-content: right;
+    /* align-items: center; ( cela ne fait absolument rien sur m'a page web*/
+    padding-top: 15px;
+
+}
+header p{
+  max-width: 1150px;
+    margin: auto;
+}
+nav li,
+li a {
+    display: inline;
+    justify-content: center;
+    text-align: right;
+    margin: auto;
+    font-weight: bold;
+    color: #F6F6F6;
+    padding: 15px;
+}
+
+#lien {
+    max-width: 1150px;
+    margin-right: 10%;
+    border-spacing: 5px 10px;
+    float: right;
+}
+
+body {
+    margin: 0;
+    background-color: #F6F6F6;
+    font-family: sans-serif;
+    position: relative;
+}
+/*--------------------------------------------------------*/
+header{
+
+font-family: sans-serif;
+
+}
+body{ background-color: #F6F6F6;
+
+}
+section form {
+    max-width: 700px;
+    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*toute les propriété vont devoir avoiir une suit e logique */
+
+.noms, .sujets, .envoi {
+   border: none;
+    font-size: 25px;
+    border-bottom: solid 2px #359E7B;
+    padding: 15px;
+    margin-bottom: 20px;
+    resize: none;
+    width: 100%;
+}
+
+.champs{
+    border: solid #359E7B;
+    height: 250px;
+    padding-left: 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    resize: none;
+    width: 100%;
+    position: relative;
+}
+
+.envoi {
+    background-color: #359E7B;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 55px;
+    width: 730px;
+}
+    
+
+
+/*------------------------------*/
+main {
+    max-width: 1150px;
+    margin: auto;
+    justify-content: right;
+}
+
+
+h1 {
+    color: #359E7B;
+    text-transform: capitalize;
+}
+
+h1,
+h2 {
+    text-align: center;
+    /*le remplacer par autre chose*/
+    margin: 50px 0 50px 0;
+
+    /* margin: top right bottom left*/
+}
+
+h2 {
+    text-decoration: underline;
+    color: #006083;
+    text-transform: capitalize;
+}
+
+h3 {
+    color: #006083;
+    text-transform: capitalize;
+}
+
+.dateTime {
+    font-weight: bold;
+}
+
+/* .lien1 {
+    display: block;
+    width: 100px;
+    margin-left: auto;
+}
+
+.lien2 {
+    display: block;
+    width: 100px;
+    margin-left: auto;
+}
+
+.lien3 {
+    display: block;
+    width: 100px;
+    margin-left: auto;
+}
+
+.lien4 {
+    display: block;
+    width: 100px;
+    margin-left: auto;
+}
+
+.lien5 {
+    display: block;
+    width: 100px;
+    margin-left: auto;
+} */
+
+/* https://jsbin.com/puyosuxodi/edit?html,css,output     j'ai trouver ce site suite à une recherche lors de mes révisions, quand j'ai eu des difficultés avec les drapeaux.
+sur ce site, on peu modifier le code, avec de l'aide j'ai essayer de condencer le tout, afin de me rendre compte que l'on peut gagner de la visibilité le code
+*/
+.lien1,
+.lien2,
+.lien3,
+.lien4,
+.lien5 {
+    display: block;
+    width: 100px;
+    margin-left: auto;
+}
+
+.moreAndMore {
+    /*"sous form de blo"*/
+    position: relative;
+    background-color: #359E7B;
+    max-width: 250px;
+    color: #FFFFFF;
+    margin: auto;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+    /*le remplacer par autre chose*/
+
+}
+
+.link {
+    color: #FFFFFF;
+}
+
+.lien5{
+    margin-bottom: 50px;
+}
+footer {
+    background-color: darkgrey;
+    margin-top: 15px;
+    text-align: center;
+}

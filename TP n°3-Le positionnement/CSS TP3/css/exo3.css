@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 55px;
+    margin: 60px 0;
+}
+
+h2{
+    margin: 20px 0;
+    text-align: center;
+}
+
+h3{
+    margin: 20px 0;
+}
+
+.exoUnContainer{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: dotted 2px black;
+}
+
+.carre{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+.carreRouge{
+    background: red;
+    margin-left: 50%;
+}
+
+.carreJaune{
+    background-color: yellow;
+    margin-top: 0%;
+    margin-left: 0;
+}
+
+.carreBleu{
+    background: blue;
+    margin-left: 50%;
+    margin-top: 50%;
+}
+
+.carreVert{
+    
+    background: green;
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+.carreViolet{
+    position: absolute;
+    background: violet;
+    top: 25%;
+    left: 25%;
+    z-index: 1;
+}
+
+.exoUnContainer{
+    position: relative;
+}
+
+
+/* fomulaire */
+
+section form {
+    max-width: 500px;
+    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/*toute les propriété vont devoir avoiir une suit e logique */
+h2{
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding-top: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /*centre l'image avec le titre */
+}
+
+.image{ 
+    filter: brightness(0) invert(1);
+    /* changer la couleur de l'image en blanc */
+}
+
+section img{
+    height: 66px;
+    width: 66px;
+    /* background-color: #FFFFFF; */
+    
+    padding-left: 150px;
+}
+.noms, .sujets, .envoi {
+    border: none;
+    font-size: 25px;
+    border-bottom: solid 2px #359E7B;
+    padding: 5px;
+    margin-bottom: 20px;
+    resize: none;/*n'ai pas compatible avec internet explorer 11/10/9/8/Safarie8/IOS Safari8*/
+    width: 100%;
+    border-radius: 5px;
+} 
+.champs{
+    border: none;
+    font-size: 25px;
+    border-bottom: solid 2px #359E7B;
+    padding: 5px;
+    margin-bottom: 20px;
+    resize: none;/*n'ai pas compatible avec internet explorer 11/10/9/8/Safarie8/IOS Safari8*/
+    width: 100%;
+    height: 95px;
+}
+
+.envoi {
+    background-color: #ffffff;
+    border: none;
+    color: #359E7B;
+    cursor: pointer;
+    height: 50px;
+    width: 435px;
+    
+}
+
+.moreAndMore {
+    /*"sous form de blo"*/
+    position: relative;
+    background-color: #10b36f;
+    max-width: 425px; 
+    color: #FFFFFF;
+    /* margin: auto; */
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+    /*le remplacer par autre chose*/
+
+}
